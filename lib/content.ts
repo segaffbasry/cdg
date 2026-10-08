@@ -32,14 +32,6 @@ export const hero = {
   title: "Build your dreams",
   lead: "Bespoke luxury construction for those who demand the exceptional",
   cta: "Contact Us",
-  // The five lines under "What we do?" on the homepage. Each one takes the hero in turn.
-  slides: [
-    { label: "Luxury new build homes in London", media: "film" as const },
-    { label: "High-end property refurbishments", image: "/media/interior.jpg" },
-    { label: "Project management services", image: "/media/site.jpg" },
-    { label: "Architectural and planning", image: "/media/design.jpg" },
-    { label: "Design & Build", image: "/media/still-kitchen.jpg" },
-  ],
 };
 
 export const about = {
@@ -72,7 +64,7 @@ export const services = {
   items: [
     { title: "Building & Construction", image: "/media/build.jpg", text: "CDG handles all stages of building, from foundations to final touches, ensuring quality and durability. Our team works closely with clients to deliver structures that meet high standards and bring their vision to life." },
     { title: "Design & Planning", image: "/media/design.jpg", text: "CDG's design and planning team creates spaces that are both functional and visually appealing. We work with clients to develop ideas into efficient, practical designs that suit their style and needs." },
-    { title: "Interior Finishing", image: "/media/interior.jpg", text: "Our interior finishing services cover everything from floors to lighting, adding polish to every room. CDG.london uses quality materials and detailed craftsmanship to create spaces that are stylish and functional." },
+    { title: "Interior Finishing", image: "/media/still-kitchen.jpg", text: "Our interior finishing services cover everything from floors to lighting, adding polish to every room. CDG.london uses quality materials and detailed craftsmanship to create spaces that are stylish and functional." },
     { title: "Renovations & Repairs", image: "/media/still-stairs.jpg", text: "CDG revitalizes properties with thoughtful renovations and repairs. From small updates to major upgrades, we enhance the value, look, and functionality of every space." },
     { title: "Commercial", image: "/media/commercial.jpg", text: "Tailored commercial spaces, end to end" },
   ],
@@ -101,19 +93,6 @@ export const apart = {
     { title: "Over 30 Years of Expertise and Craftsmanship", text: "With three decades of experience in the industry, we combine skilled craftsmanship with a deep understanding of London's architectural heritage. We bring precision and quality to every project, ensuring results that exceed expectations." },
     { title: "Unwavering Commitment to Safety", text: "Safety is paramount in everything we do. We follow rigorous safety protocols, conduct regular risk assessments, and ensure every project site exceeds industry safety standards, providing complete peace of mind for our clients and team." },
     { title: "Client-Centred Excellence", text: "We believe in open communication and complete transparency. Working closely with each client from concept to completion, we ensure every stakeholder is informed and involved, delivering a seamless and satisfying experience throughout." },
-  ],
-};
-
-export const london = {
-  title: "London-Wide Expertise",
-  intro: "We are proud to deliver exceptional construction services across every corner of London, bringing quality, precision, and reliability to projects throughout the capital.",
-  note: "Our team operates exclusively within the M25, ensuring quick response times and deep local expertise.",
-  areas: [
-    { id: "central", name: "Central London", text: "Navigating the complexities of Central London with unmatched efficiency and professionalism." },
-    { id: "north", name: "North London", text: "Honouring North London's unique architectural character whilst delivering modern excellence." },
-    { id: "south", name: "South London", text: "Bringing client visions to life with exceptional craftsmanship across South London." },
-    { id: "east", name: "East London", text: "Blending traditional expertise with innovative methods throughout East London." },
-    { id: "west", name: "West London", text: "Delivering precision and care to prestigious projects in West London." },
   ],
 };
 

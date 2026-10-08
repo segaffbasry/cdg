@@ -13,7 +13,7 @@ export function Services() {
     <section className="services section" id="services" aria-labelledby="services-title">
       <div className="wrap">
         <div className="split-head">
-          <h2 className="display h-xl" id="services-title" data-reveal="head">{services.title}</h2>
+          <h2 className="display h-lg" id="services-title" data-reveal="head">{services.title}</h2>
           <p className="split-intro" data-reveal="text">{services.intro}</p>
         </div>
 

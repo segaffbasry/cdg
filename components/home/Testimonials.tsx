@@ -18,8 +18,13 @@ export function Testimonials() {
 
   useEffect(() => {
     const el = root.current!;
-    const quote = el.querySelector(".quote.is-active");
-    if (!reducedMotion()) gsap.fromTo(quote, { y: 24, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1.1, ease: EASE });
+    // Only the inner text is animated, and any earlier inline styles are cleared, so the .is-active class alone
+    // decides which quote is visible (animating the figure itself left the previous quote showing underneath).
+    const texts = el.querySelectorAll<HTMLElement>(".quote blockquote");
+    gsap.killTweensOf(texts);
+    gsap.set(texts, { clearProps: "transform,opacity" });
+    const text = el.querySelector(".quote.is-active blockquote");
+    if (!reducedMotion()) gsap.fromTo(text, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: EASE });
     const fills = el.querySelectorAll<HTMLElement>(".quote-fill");
     tween.current?.kill();
     gsap.set(fills, { scaleX: 0 });
@@ -40,7 +45,7 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="testimonials section band" ref={root} aria-labelledby="testimonials-title">
+    <section className="testimonials section" ref={root} aria-labelledby="testimonials-title">
       <div className="wrap">
         <h2 className="kicker-title" id="testimonials-title" data-reveal="label">{testimonials.title}</h2>
         <div className="quotes">
